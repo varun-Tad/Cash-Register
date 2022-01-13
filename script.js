@@ -44,7 +44,7 @@ checkButton.addEventListener('click', ()=>{
 
 
 
-nextButton.addEventListener('click',function(){
+nextButton.addEventListener('click',()=>{
 
 changeTable.classList.remove("hidden");
 cashGiven.classList.remove("hidden");
@@ -54,7 +54,7 @@ labelCashGiven.classList.remove("hidden");
 })
 
 
-function calculateChange(amountToBeReturned){
+const calculateChange=amountToBeReturned=>{
 
    for(let i=0;i<availableNotes.length;i++)
    {
@@ -68,12 +68,12 @@ function calculateChange(amountToBeReturned){
 }
 
 
-function hideMessage()
+const hideMessage=()=>
 {
     message.style.display="none";
 }
 
-function showMessage(msg)
+const showMessage = (msg)=>
 {
     message.style.display="block";
     message.innerText = msg;
