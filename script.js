@@ -16,7 +16,7 @@ checkButton.classList.add("hidden");
 labelCashGiven.classList.add("hidden");
 
 
-checkButton.addEventListener('click', function validateBillAndCashAmount(){
+checkButton.addEventListener('click', ()=>{
 
     hideMessage();
     
